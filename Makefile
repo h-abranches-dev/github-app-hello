@@ -3,7 +3,7 @@ install: clean
 	go mod init github.com/h-abranches-dev/github-app-hello
 
 dev2:
-	@set -a; \
+	set -a; \
 	. .env; \
 	set +a; \
 	rm -rf bin/service; \
