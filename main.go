@@ -9,13 +9,13 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "Hello, GitHub App!")
+		fmt.Fprintln(w, "Hello, GitHub App 2!")
 	})
 
 	http.HandleFunc("/webhook", func(w http.ResponseWriter, r *http.Request) {
-		log.Println("Received a webhook event!")
+		log.Println("Received a webhook event 2!")
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintln(w, "Webhook received")
+		fmt.Fprintln(w, "Webhook received 2")
 	})
 
 	port := os.Getenv("PORT")
